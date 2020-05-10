@@ -11,14 +11,23 @@
 </head>
 
 <body>
-    <ion-button>Click me!!!</ion-button>
-    <script>
-        const btn = document.querySelector('ion-button');
-
-        btn.addEventListener('click', () => {
-            console.log('button clicked');
-        })
-    </script>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar color="primary">
+                <ion-title>BMI calculator</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <ion-item>
+                <ion-label position="floating">Enter your height</ion-label>
+                <ion-input></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Enter your weight</ion-label>
+                <ion-input></ion-input>
+            </ion-item>
+        </ion-content>
+    </ion-app>
 </body>
 
 </html>
